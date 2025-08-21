@@ -3,142 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me - Aashi Garg</title>
+  <title>Academic Timetable</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
+    table {
+      border-collapse: collapse;
+      width: 100%;
       text-align: center;
-      padding: 30px;
-      background: linear-gradient(135deg, #2196f3, #0d47a1);
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    th {
+      background-color: #2196f3;
       color: white;
     }
-    h1 {
-      color: white;
-      margin-bottom: 10px;
+    tbody td {
+      background-color: #f9f9f9;
     }
-    section {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    section h2 {
-      color: #0d47a1;
-      border-bottom: 2px solid #2196f3;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    footer {
-      margin-top: 30px;
-      text-align: center;
-      padding: 15px;
-      background: #0d47a1;
-      color: white;
-      font-size: 14px;
-    }
-    a {
-      color: #2196f3;
-      text-decoration: none;
+    tfoot td {
+      background-color: #eee;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Aashi Garg</h1>
-    <p>Full Stack Developer | AI & ML Enthusiast</p>
-    <p>
-      <a href="mailto:aashigarg825@gmail.com">aashigarg825@gmail.com</a> | 
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a> | 
-      <a href="https://github.com" target="_blank">GitHub</a> | 
-      <a href="https://leetcode.com" target="_blank">LeetCode</a>
-    </p>
+    <h1>Academic Timetable</h1>
   </header>
 
   <main>
-    <!-- About Section -->
-    <section>
-      <h2>Hello, I’m Aashi Garg 👋</h2>
-      <p>
-        I am a passionate learner exploring the exciting world of 
-        <strong>Full Stack Development</strong> and <strong>Artificial Intelligence</strong>.  
-        I enjoy building real-world projects, solving challenging coding problems, 
-        and continuously improving my skills in web technologies, databases, and machine learning.
-      </p>
-      <p>
-        My academic journey has helped me gain experience in HTML, CSS, JavaScript, 
-        Python, SQL, and Git/GitHub. Currently, I am working on projects like a 
-        <em>personal portfolio</em> and an <em>academic timetable website</em>.
-      </p>
-      <p>
-        Apart from coding, I love reading, exploring new tech trends, and sharing 
-        knowledge with peers. My goal is to become a skilled developer who can 
-        contribute to impactful projects in the field of technology.
-      </p>
-    </section>
-
-    <!-- Education -->
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li><strong>B.E. Computer Science (AIML & IoT)</strong>, GLA University, Mathura (2023–2027) | CGPA – 7.13</li>
-        <li>Intermediate, Auraiya (2020–2022) | 81%</li>
-        <li>High School, Auraiya (2010–2020) | 82%</li>
-      </ul>
-    </section>
-
-    <!-- Skills -->
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>AI / ML:</strong> NumPy, Pandas, Matplotlib, Seaborn, OpenCV, TensorFlow/Keras, Scikit-learn</li>
-        <li><strong>Programming:</strong> Java, Python, JavaScript</li>
-        <li><strong>Databases:</strong> MySQL, MongoDB</li>
-        <li><strong>Tools:</strong> Git, GitHub, Excel, Eclipse, Google Colab, VSCode, Jupyter Notebook</li>
-      </ul>
-    </section>
-
-    <!-- Experience -->
-    <section>
-      <h2>Experience</h2>
-      <h3>Computer Vision Intern – Inxee System Pvt. Ltd. (June–Aug 2025)</h3>
-      <p>Worked on OpenCV-based line detection and handwritten character recognition for aircraft docking systems (VDGS). Processed LiDAR + camera data and annotated datasets using Roboflow.</p>
-      
-      <h3>Data Analytics Intern – SkillCred (June–July 2024)</h3>
-      <p>Analyzed delivery partner payments using Excel & SQL, identified cost drivers, and proposed optimizations for profitability and efficiency.</p>
-    </section>
-
-    <!-- Projects -->
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Deep Scan AI – Deep Fake Detection System</strong> | CNN-based system with audio-visual sync & anomaly detection. Selected for Smart India Hackathon 2024.</li>
-        <li><strong>InsightPod – AI-Powered Podcast Platform</strong> | Interactive podcast platform with AI-based recommendations and gamified learning. Ranked Top 15 in ISTE SRM NCR Hackathon 2025.</li>
-      </ul>
-    </section>
-
-    <!-- Achievements -->
-    <section>
-      <h2>Achievements & Certifications</h2>
-      <ul>
-        <li>Aarambh’25 - Innovation challenge by IIT Delhi</li>
-        <li>Code Wizard’s – SRM Institute of Science and Technology</li>
-        <li>Smart India Hackathon (2x Internal Rounds, Top 30 National Presentation)</li>
-      </ul>
-    </section>
+    <table>
+      <thead>
+        <tr>
+          <th>Time / Day</th>
+          <th>Monday<br>18.08.2025</th>
+          <th>Tuesday<br>19.08.2025</th>
+          <th>Wednesday<br>20.08.2025</th>
+          <th>Thursday<br>21.08.2025</th>
+          <th>Friday<br>22.08.2025</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>08:00 AM - 09:00 AM</td>
+          <td>BCSE 1251<br>AB - XII<br>Room - 7023</td>
+          <td>BCSE 0281<br>AB - XII<br>Room - 7023</td>
+          <td>BCSE 0712<br>AB - XII<br>Room - 7023</td>
+          <td>BCSE 0742<br>AB - XII<br>Room - 7023</td>
+          <td>PQRH 0001<br>AB - XII<br>Room - 7023</td>
+        </tr>
+        <tr>
+          <td>09:00 AM - 10:00 AM</td>
+          <td>BCSE 0712<br>AB - XII<br>Room - 7023</td>
+          <td>BCSE 0281<br>AB - XII<br>Room - 7023</td>
+          <td>BCSE 1251<br>AB - XII<br>Room - 7023</td>
+          <td>BCSE 0742<br>AB - XII<br>Room - 7023</td>
+          <td>BCSE 0712<br>AB - XII<br>Room - 7023</td>
+        </tr>
+        <tr>
+          <td>10:00 AM - 11:00 AM</td>
+          <td>BCSE 0704<br>AB - XII<br>Room - 7023</td>
+          <td>BCSC 1012<br>AB - XII<br>Room - 7023</td>
+          <td>PGDH 0001<br>AB - XII<br>Room - 7023</td>
+          <td>----</td>
+          <td>BCSC 1807<br>AB - XII<br>Room - 7023</td>
+        </tr>
+        <tr>
+          <td>11:00 AM - 12:00 PM</td>
+          <td>PQRH 0001<br>AB - XII<br>Room - 7023</td>
+          <td>----</td>
+          <td>----</td>
+          <td>----</td>
+          <td>BCSC 1807<br>AB - XII<br>Room - 7023</td>
+        </tr>
+        <tr>
+          <td>01:00 PM - 02:00 PM</td>
+          <td>BCSC 1012<br>AB - XII<br>Room - 7023</td>
+          <td>----</td>
+          <td>PVRH 0001<br>AB - XII<br>Room - 7023</td>
+          <td>----</td>
+          <td>BCSE 0734<br>AB - XII<br>Room - 7023</td>
+        </tr>
+        <tr>
+          <td>02:00 PM - 03:00 PM</td>
+          <td>----</td>
+          <td>BCSE 0742<br>AB - XII<br>Room - 7023</td>
+          <td>BCSC 1012<br>AB - XII<br>Room - 7023</td>
+          <td>----</td>
+          <td>BCSE 0734<br>AB - XII<br>Room - 7023</td>
+        </tr>
+        <tr>
+          <td>03:00 PM - 04:00 PM</td>
+          <td>----</td>
+          <td>BCSE 0742<br>AB - XII<br>Room - 7023</td>
+          <td>----</td>
+          <td>----</td>
+          <td>PCPH 0002<br>AB - XII<br>Room - 7023</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="6">* All classes are scheduled in AB - XII, Room - 7023 unless mentioned.</td>
+        </tr>
+      </tfoot>
+    </table>
   </main>
 
-  
+  <footer>
+    <p>&copy; 2025 Aashi Garg</p>
+  </footer>
 </body>
 </html>
