@@ -31,11 +31,7 @@ Progress towards React and Full-Stack Applications
 
 Create a personal portfolio website and multiple projects
 
-📞 Contact
 
 👤 Aashi Garg
 📧 aashigarg825@gmail.com
 
-🔗 LinkedIn
- | GitHub
- | LeetCode
