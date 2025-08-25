@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aashi Garg | Portfolio</title>
+  <style>
+    /* Reset & Global Styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    header {
+      background: rgb(34, 85, 150);
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { font-size: 24px; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+    nav a:hover { color: #ffdd57; }
+
+    /* Container */
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    section { margin-bottom: 40px; }
+    section h2 {
+      margin-bottom: 10px;
+      font-size: 26px;
+      color: hsl(200, 70%, 35%);
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    /* Highlight Example */
+    .highlight {
+      background-color: rgba(255, 200, 0, 0.3);
+      padding: 3px 6px;
+      border-radius: 5px;
+    }
+    p::first-letter {
+      font-size: 28px;
+      font-weight: bold;
+      color: crimson;
+    }
+    a[target="_blank"] {
+      color: #0077cc;
+      font-weight: bold;
+    }
+    a:hover { color: #e63946; text-decoration: underline; }
+
+    /* Lists */
+    ul, ol { padding-left: 20px; }
+    li { margin: 6px 0; font-size: 16px; }
+
+    /* Movies */
+    #movies ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    #movies li { padding: 5px 0; }
+    .fav-movie {
+      color: #ff4500;
+      font-weight: bold;
+      font-style: italic;
+      background-color: rgba(255, 200, 150, 0.3);
+      padding: 4px 6px;
+      border-radius: 6px;
+    }
+
+    /* Cities */
+    #cities ol { padding-left: 20px; }
+    #cities li { margin: 6px 0; }
+    #cities li:nth-child(1) { color: hsl(120, 60%, 35%); font-size: 18px; }
+    #cities li:nth-child(2) { color: rgb(200, 50, 50); text-transform: uppercase; }
+    #cities li:nth-child(3) { background-color: #ffe4b5; padding: 4px; }
+    #cities li:nth-child(4) { color: rgba(0, 0, 255, 0.7); letter-spacing: 2px; }
+    #cities li:nth-child(5) { color: purple; font-style: italic; }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <h1>Aashi Garg</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#movies">Movies</a>
+      <a href="#cities">Cities</a>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <main>
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m <span class="highlight">Aashi Garg</span>, a Computer Science (AIML & IoT) engineering student at 
+        GLA University, Mathura. I’m passionate about Artificial Intelligence, Machine Learning, 
+        and building innovative projects that solve real-world problems.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><b>B.E. Computer Science (AIML & IoT)</b> – GLA University, Mathura (2023–2027), CGPA: 7.13</li>
+        <li><b>Intermediate</b> – Auraiya, 81% (2020–2022)</li>
+        <li><b>High School</b> – Auraiya, 82% (2010–2020)</li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming: Python, Java</li>
+        <li>AI/ML Frameworks: TensorFlow, Keras, Scikit-learn, PyTorch, NLP, OpenCV</li>
+        <li>Data Analytics: SQL, Excel, Pandas, Matplotlib, Seaborn</li>
+        <li>Databases: MySQL, MongoDB</li>
+        <li>Tools: Git, GitHub, Jupyter, VSCode, Google Colab, RoboFlow</li>
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li><b>Computer Vision Intern</b> – Inxee Systems Pvt. Ltd. (Jun–Aug 2025)
+          <ul>
+            <li>Applied OpenCV for line detection and handwritten character recognition.</li>
+            <li>Processed Camera & LiDAR data for VDGS system.</li>
+            <li>Annotated datasets with Roboflow to improve accuracy.</li>
+          </ul>
+        </li>
+        <li><b>Data Analytics Intern</b> – Skill-cred (Jun–Jul 2024)
+          <ul>
+            <li>Analyzed delivery partner payments using Excel & SQL.</li>
+            <li>Identified cost drivers and suggested improvements.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><b>Deep Scan AI – Deep Fake Detection System</b>
+          <ul>
+            <li>Built deep fake detection using CNNs & anomaly analysis.</li>
+            <li>Selected in SIH internal rounds; ranked top 30 nationally.</li>
+          </ul>
+        </li>
+        <li><b>InsightPod – AI-Powered Podcast Platform</b>
+          <ul>
+            <li>Created interactive podcast platform with personalization & fact-checking.</li>
+            <li>Ranked Top 15 in ISTE SRM NCR Hackathon 2025.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ✅ Task 4: Movies -->
+    <section id="movies">
+      <h2>My Favorite Movies</h2>
+      <ul>
+        <li>Inception</li>
+        <li class="fav-movie">Interstellar</li>
+        <li>The Dark Knight</li>
+        <li>Avatar</li>
+      </ul>
+    </section>
+
+    <!-- ✅ Task 5: Cities -->
+    <section id="cities">
+      <h2>Cities I Want to Visit</h2>
+      <ol>
+        <li>Tokyo</li>
+        <li>Paris</li>
+        <li>New York</li>
+        <li>Sydney</li>
+        <li>Barcelona</li>
+      </ol>
+    </section>
+  </main>
+
+ 
+</body>
+</html>
