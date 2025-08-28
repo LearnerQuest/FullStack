@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Startup Landing Page</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* ===== Animation Section ===== */
+    body {
+      background: linear-gradient(to bottom, #0b0c10, #1f2833);
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .space-scene {
+      position: relative;
+      height: 500px;
+      overflow: hidden;
+    }
+
+    .rocket {
+      width: 100px;
+      position: absolute;
+      bottom: -150px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: launch 6s ease-in-out infinite;
+    }
+
+    @keyframes launch {
+      0%   { bottom: -150px; }
+      50%  { bottom: 350px; }
+      100% { bottom: -150px; }
+    }
+
+    .astronaut {
+      width: 80px;
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      animation: float 5s ease-in-out infinite alternate;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0) rotate(0deg); }
+      to   { transform: translateY(-20px) rotate(10deg); }
+    }
+
+    /* Navbar hover transitions */
+    .nav-link {
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      background: #45a29e;
+      border-radius: 5px;
+      color: #fff !important;
+      transform: scale(1.1);
+    }
+
+    /* Footer styling */
+    footer {
+      background: #0b0c10;
+      color: #c5c6c7;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-uppercase" href="#">SpaceXcel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link px-3" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Animation Section -->
+  <section class="space-scene text-center">
+    <!-- ✅ Reliable Open-source Icons -->
+    <img src="https://cdn-icons-png.flaticon.com/512/3212/3212608.png" class="rocket" alt="Rocket">
+    <img src="https://cdn-icons-png.flaticon.com/512/3212/3212602.png" class="astronaut" alt="Astronaut">
+    <h1 class="display-4 fw-bold position-absolute top-50 start-50 translate-middle">Explore Beyond Earth</h1>
+  </section>
+
+  <!-- Carousel -->
+  <div id="carouselExample" class="carousel slide container my-5">
+    <div class="carousel-inner rounded-3 shadow">
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="space">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1581090700227-4c4f50b5d74b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="rocket">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1580428180138-47e6a3d7d98f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="astronaut">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Services Section -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card text-dark shadow-sm">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="service">
+          <div class="card-body">
+            <h5 class="card-title">Satellite Deployment</h5>
+            <p class="card-text">We provide efficient and secure satellite launch services worldwide.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-dark shadow-sm">
+          <img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="service">
+          <div class="card-body">
+            <h5 class="card-title">Space Research</h5>
+            <p class="card-text">Our team is dedicated to research in deep space exploration and Mars colonization.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-dark shadow-sm">
+          <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="service">
+          <div class="card-body">
+            <h5 class="card-title">Astronaut Training</h5>
+            <p class="card-text">We train astronauts with advanced simulations for future missions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
