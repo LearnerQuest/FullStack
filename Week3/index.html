@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 3 – Layouts</title>
+  <style>
+    /* ====== Global Styles ====== */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+    h2 {
+      text-align: center;
+      margin: 1rem 0;
+      color: #333;
+    }
+    section {
+      padding: 2rem;
+    }
+
+    /* ====== Sidebar ====== */
+    .sidebar {
+      width: 250px;
+      background: #222;
+      color: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 2rem 1rem;
+      transition: 0.3s ease-in-out;
+    }
+    .sidebar h3 {
+      margin-bottom: 1rem;
+    }
+    .sidebar a {
+      display: block;
+      color: #bbb;
+      text-decoration: none;
+      padding: 0.5rem 0;
+    }
+    .sidebar a:hover {
+      color: #fff;
+    }
+
+    /* Responsive Sidebar */
+    @media(max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      section {
+        margin-left: 0 !important;
+      }
+    }
+
+    /* ====== Product Card ====== */
+    .product-card {
+      background: #fff;
+      width: 280px;
+      margin: 2rem auto;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .product-card h3 {
+      margin: 1rem 0 0.5rem;
+    }
+    .product-card p {
+      color: #555;
+      font-size: 0.9rem;
+    }
+    .product-card button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.2rem;
+      border-radius: 6px;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+    .product-card button:hover {
+      background: #0056b3;
+    }
+
+    /* ====== Blog Layout (Flexbox) ====== */
+    .blog-container {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .blog-card {
+      flex: 1;
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .blog-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+    .blog-card h4 {
+      margin-top: 0;
+    }
+
+    /* Responsive Blog Layout */
+    @media(max-width: 900px) {
+      .blog-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3>Navigation</h3>
+    <a href="#sidebar">Sidebar</a>
+    <a href="#product">Product Card</a>
+    <a href="#blog">Blog Layout</a>
+  </div>
+
+  <!-- Content Sections -->
+  <section id="sidebar" style="margin-left:260px;">
+    <h2>Responsive Sidebar</h2>
+    <p>This is an example of a sidebar created using <code>&lt;div&gt;</code> and styled with CSS. Resize the window to see responsiveness.</p>
+  </section>
+
+  <section id="product" style="margin-left:260px;">
+    <h2>Product Card</h2>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=600" alt="Wireless Headphones">
+      <h3>Wireless Headphones</h3>
+      <p>High-quality sound, noise cancellation, and 20 hours battery life.</p>
+      <button>Buy Now</button>
+    </div>
+  </section>
+
+  <section id="blog" style="margin-left:260px;">
+    <h2>Blog Layout (3-column Flexbox)</h2>
+    <div class="blog-container">
+      <div class="blog-card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600" alt="Ocean Blog">
+        <h4>Blog Post 1</h4>
+        <p>Exploring the beauty of oceans and why we must protect marine life.</p>
+      </div>
+      <div class="blog-card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600" alt="Tech Blog">
+        <h4>Blog Post 2</h4>
+        <p>Latest advancements in Artificial Intelligence and their impact on jobs.</p>
+      </div>
+      <div class="blog-card">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600" alt="Travel Blog">
+        <h4>Blog Post 3</h4>
+        <p>Top 10 travel destinations for 2025 – a journey to remember.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
