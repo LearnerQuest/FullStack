@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 2 - CSS Selectors & Lists</title>
+  <style>
+    /* ====== ELEMENT SELECTOR ====== */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: hsl(210, 30%, 10%); /* HSL */
+      color: #f5f5f5; /* HEX */
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: rgba(0, 150, 255, 0.8); /* RGBA */
+      padding: 1rem;
+    }
+
+    p {
+      line-height: 1.6;
+      color: rgb(220, 220, 220); /* RGB */
+    }
+
+    /* ====== CLASS SELECTOR ====== */
+    .highlight {
+      color: #ffcc00;
+      font-weight: bold;
+    }
+
+    /* ====== ID SELECTOR ====== */
+    #about-container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+
+    /* ====== ATTRIBUTE SELECTOR ====== */
+    a[target="_blank"] {
+      color: #00ff88;
+      text-decoration: none;
+    }
+
+    a[target="_blank"]:hover {
+      text-decoration: underline;
+    }
+
+    /* ====== PSEUDO-CLASS SELECTORS ====== */
+    ul li:first-child {
+      color: #00aaff;
+      font-style: italic;
+    }
+
+    ol li:nth-child(odd) {
+      background-color: rgba(255,255,255,0.05);
+    }
+
+    ol li:hover {
+      background-color: #333;
+      cursor: pointer;
+    }
+
+    /* ====== PSEUDO-ELEMENT SELECTORS ====== */
+    h2::before {
+      content: "★ ";
+      color: #ff4444;
+    }
+
+    h2::after {
+      content: " ★";
+      color: #ff4444;
+    }
+
+    /* ====== LIST STYLING ====== */
+    ul.movies {
+      list-style-type: square;
+      padding-left: 1.5rem;
+    }
+
+    ul.movies li.favorite {
+      color: #ffcc00;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    ol.cities {
+      padding-left: 1.5rem;
+    }
+
+    ol.cities li {
+      padding: 0.3rem;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>About Us</h1>
+
+  <div id="about-container">
+    <h2>Who We Are</h2>
+    <p>
+      Welcome to our <span class="highlight">Week 2 Project</span>!  
+      This page demonstrates different <span class="highlight">CSS selectors</span>,  
+      colors (HEX, RGB, RGBA, HSL), and styled lists.
+    </p>
+    <p>
+      Learn more on our <a href="https://github.com/LearnerQuest" target="_blank">GitHub</a>.
+    </p>
+  </div>
+
+  <div id="lists" style="max-width:800px;margin:auto;padding:2rem;">
+    <h2>Favorite Movies</h2>
+    <ul class="movies">
+      <li>Inception</li>
+      <li class="favorite">Interstellar ⭐</li>
+      <li>Avengers: Endgame</li>
+      <li>The Dark Knight</li>
+    </ul>
+
+    <h2>Top Cities</h2>
+    <ol class="cities">
+      <li>New York</li>
+      <li>Tokyo</li>
+      <li>Paris</li>
+      <li>Dubai</li>
+      <li>Singapore</li>
+    </ol>
+  </div>
+
+</body>
+</html>
