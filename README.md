@@ -74,15 +74,4 @@ Each week explores a **new set of web development concepts**, gradually building
 
 ---
 
-## 📷 Preview
-(Add screenshots or a GIF of your landing page here once you run it)  
-
----
-
-## 🌍 Live Demo
-👉 Hosted on **GitHub Pages**:  
-`https://USERNAME.github.io/space-landing-page`
-
----
-
 ✍️ Developed by *Aashi Garg* | B.Tech 3rd Year | Frontend Developer 🚀
